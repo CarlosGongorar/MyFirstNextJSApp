@@ -3,7 +3,12 @@ import Link from "next/link";
  * por ejemplo este componente solo existe en la categoria tienda y sus subcarpetas
  */
 
-
+/** Los datos que se cambian en las subpaginas de metadata tambien se cambian en sus hijos*/
+export const metadata = {
+    title: 'Tienda - Next.js',
+    description: 'Tienda virtual con productos de la mejor calidad',
+    keywords: ['tienda', 'ecommerce', 'next.js']
+}
 function TiendaLayout({children}){ /** Children son los elementos a mostrar de la pagina */
     return <>
         <nav>
