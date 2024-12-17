@@ -5,6 +5,7 @@ import { Roboto } from "next/font/google"
  * y otros, ademas de eso. Hay mas cosas que se pueden meter de datos meta, pero toca buscar en la
  * documentacion de Next
  */
+
 export const metadata = {
   title: "Tienda con Next",
   description: "Esta es la pagina principal de mi tienda",
