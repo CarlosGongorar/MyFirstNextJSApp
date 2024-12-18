@@ -1,4 +1,5 @@
 import PostCard from "../../components/PostCard"
+
  // UseState: Guardar Datos
  // UseEffect: Cargar Datos
  // Render: Mostrar Elementos
@@ -19,7 +20,7 @@ async function loadPost (){
     const data = await res.json()
 
     // Esta funcion sirve para cuando los datos realmente demoran en cargar
-    //await new Promise((resolve) => setTimeout(resolve, 3000))
+    await new Promise((resolve) => setTimeout(resolve, 3000))
     return data
 }
 
