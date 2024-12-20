@@ -1,7 +1,9 @@
 //"use client" si pongo esto teno que quitar el metadata
 // Metadata solo se usa para componentes del servidor
 // Si quieres ver en que casos se puede usar los use client y todo visitar https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns#when-to-use-server-and-client-components
-import Users from "../components/Users"
+import Users from "@/components/Users"
+
+// el @ en el import hace referencia a importar desde el root de la app
 export const metadata = {
     title: "Este titulo solo sale si no es use client",
 }
