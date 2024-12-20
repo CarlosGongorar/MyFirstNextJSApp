@@ -1,4 +1,5 @@
 import PostCard from "@/components/PostCard"
+import "./post.css"
 
  // UseState: Guardar Datos
  // UseEffect: Cargar Datos
@@ -20,7 +21,7 @@ async function loadPost (){
     const data = await res.json()
 
     // Esta funcion sirve para cuando los datos realmente demoran en cargar
-    await new Promise((resolve) => setTimeout(resolve, 3000))
+    //await new Promise((resolve) => setTimeout(resolve, 3000))
     return data
 }
 
@@ -30,7 +31,7 @@ async function PostPage() {
     const posts = await loadPost();
     
     return (
-    <div>{
+    <div className="grid">{
         posts.map(post => (
             <PostCard post={post} key={post.id} />
         ))

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import { Roboto } from "next/font/google"
+import "./globals.css"
 
 /** Este exporta las propiedades importantes de la pagina como titulo, descripcion keywords
  * y otros, ademas de eso. Hay mas cosas que se pueden meter de datos meta, pero toca buscar en la
